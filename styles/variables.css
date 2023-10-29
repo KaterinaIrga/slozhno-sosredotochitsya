@@ -2,3 +2,14 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --paragraph-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --header-color: #000028;
+  --title-color: #DB00FF;
+  --max-screen: calc(1024px - clamp(10px, 0.0286rem + 2.5445vw, 20px));
+  --medium-screen: calc(768px - clamp(10px, 0.0286rem + 2.5445vw, 20px));
+  --min-screen: calc(375px - clamp(10px, 0.0286rem + 2.5445vw, 20px));
+}
+
+
