@@ -78,6 +78,7 @@
     align-items: center;
   }
 }
+
 .decorated-zone::before {
   content: "";
   border-block-start: 1px solid var( --decoration-color);
@@ -90,10 +91,12 @@
   inset-block-start: 0;
 }
 
+
+
 .decorated-zone::after {
   content: "";
-  border-block-end: 1px solid var( --decoration-color);
-  border-inline-start: 1px solid var( --decoration-color);
+  border-block-end: 1px solid var( --title-color);
+  border-inline-start: 1px solid var( --title-color);
   inline-size: 25px;
   block-size: 25px;
   grid-area: subtitle;
@@ -102,9 +105,21 @@
   inset-block-end: 0;
 }
 
-.header__rec {
+.header__rec::before {
+  content: "rec";
   text-transform: uppercase;
   color: var( --decoration-color);
+  position: absolute;
+  inset-inline-end: 10px;
+  inset-block-start: 0;
+  inline-size: 52px;
+  block-size: 26px;
+  word-spacing: 1rem;
+}
+
+.header__rec {
+  text-transform: uppercase;
+  color: transparent;
   position: absolute;
   inset-inline-end: 0;
   inset-block-start: 0;
