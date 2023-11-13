@@ -95,8 +95,8 @@
 
 .decorated-zone::after {
   content: "";
-  border-block-end: 1px solid var( --title-color);
-  border-inline-start: 1px solid var( --title-color);
+  border-block-end: 1px solid var( --decoration-color);
+  border-inline-start: 1px solid var( ---decoration-color);
   inline-size: 25px;
   block-size: 25px;
   grid-area: subtitle;
