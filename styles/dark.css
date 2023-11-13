@@ -3,13 +3,7 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-/*
-:root {
-  --paragraph-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --header-color: #000028;
-  --title-color: #DB00FF;
-}*/
+
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
@@ -19,5 +13,12 @@
 
   background-image: url("../images/cover-image-dark.png");
   --title-color: #DB00FF;
+  --title-shadow-color: #FF0070;
   --accent-color: #FF0070;
+  --header-color: #000028;
+  --paragraph-color: #F1B2CE;
+  --subtitle-color: #000028;
+  --decoration-color: #FF0070;
+  --dark-shadow-color: color-mix(in lch, #000 , #fff 25%);
+
 }
