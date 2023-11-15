@@ -10,12 +10,12 @@
   --font-family: 'IBM Plex mono';
   --padding-size: clamp(10px, 2.545vw + 0.458px, 20px);
   --title-font-size: 116px;
-  --title-margin-inline-start: clamp(-0.833rem, 0rem + 1.953vw, -1.111rem);
   --common-font-size: 18px;
   --title-line-height: 82.5%;
   --common-line-height: 23.4px;
   --font-weight-bold: bold;
   --font-weight-regular: normal;
+  --title-shadow-color: #FF0070;
 }
 
 

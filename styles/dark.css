@@ -13,7 +13,7 @@
 
   background-image: url("../images/cover-image-dark.png");
   --title-color: #DB00FF;
-  --title-shadow-color: #FF0070;
+  --title-shadow-color: color-mix(in lch, #FF0070, #fff 25%);
   --accent-color: #FF0070;
   --header-color: #000028;
   --paragraph-color: #F1B2CE;
@@ -21,4 +21,8 @@
   --decoration-color: #FF0070;
   --dark-shadow-color: color-mix(in lch, #000 , #fff 25%);
 
+}
+
+.theme_dark .header__rec {
+  visibility:visible ;
 }
