@@ -1,0 +1,5 @@
+{
+  "icons": [
+    {"src": "./images/favicon.ico", "type": "image/ico"},
+    {"src": "./images/mobile-icon.png", "type": "image/png"}]
+}

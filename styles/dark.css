@@ -11,7 +11,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  background-image: url("../images/cover-image-dark.png");
+
   --title-color: #DB00FF;
   --title-shadow-color: color-mix(in lch, #FF0070, #fff 25%);
   --accent-color: #FF0070;
@@ -19,10 +19,45 @@
   --paragraph-color: #F1B2CE;
   --subtitle-color: #000028;
   --decoration-color: #FF0070;
+  --decoration-color-lite:color-mix(in lch, var(--decoration-color), transparent 40%);
   --dark-shadow-color: color-mix(in lch, #000 , #fff 25%);
-
+  --background-image: url("../images/cover-image-dark.png");
+  background-image: var(--background-image);
 }
 
 .theme_dark .header__rec {
-  visibility:visible ;
+  visibility: visible ;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --title-color: #DB00FF;
+  --title-shadow-color: color-mix(in lch, #FF0070, #fff 25%);
+  --accent-color: #FF0070;
+  --header-color: #000028;
+  --paragraph-color: #F1B2CE;
+  --subtitle-color: #000028;
+  --decoration-color: #FF0070;
+  --decoration-color-lite:color-mix(in lch, var(--decoration-color), transparent 40%);
+  --dark-shadow-color: color-mix(in lch, #000 , #fff 25%);
+  --background-image: url("../images/cover-image-dark.png");
+    }
+
+  html {
+    background-image: var(--background-image);
+  }
+  .page{
+    background-image: var(--background-image);
+  }
+
+
+    @media screen and (width < 1024px) {
+      .header__title {
+        text-shadow: 4px 4px 0 var(--accent-color);
+      }
+
+      .footer__title {
+        text-shadow: 4px 4px 0 var(--accent-color);
+      }
+    }
 }

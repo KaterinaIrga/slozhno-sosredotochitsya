@@ -10,16 +10,22 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background-image: url("../images/cover-image-light.png");
+
   --title-color: #FFC2E6;
   --accent-color: #FF8DCB;
   --paragraph-color: #353430;
   --header-color: #353430;
   --title-shadow-color: #FF0070;
   --decoration-color: #353430;
+  --decoration-color-lite:color-mix(in lch, var(--decoration-color), transparent 40%);
   --subtitle-color: #353430;
+  --background-image: url("../images/cover-image-light.png");
+  background-image: var(--background-image);
 }
 
+.theme_light .header__rec {
+  visibility: hidden ;
+}
 
 @media screen and (width < 1024px) {
   .header__title {
@@ -39,11 +45,22 @@
     --header-color: #353430;
     --title-shadow-color: #FF0070;
     --decoration-color: #353430;
+    --decoration-color-lite:color-mix(in lch, var(--decoration-color), transparent 40%);
     --subtitle-color: #353430;
+    --background-image: url("../images/cover-image-light.png");
     }
 
-    .page.theme_light {
-      background-image: url("../images/cover-image-light.png");
+
+  html {
+    background-image: var(--background-image);
+  }
+
+    .page {
+      background-image: var(--background-image);
+    }
+
+    .header__rec {
+      visibility: hidden ;
     }
 
     @media screen and (width < 1024px) {
@@ -52,7 +69,7 @@
       }
 
       .footer__title {
-        text-shadow: 4px 4px 0 var(--accent-color);
+        text-shadow: 2px 2px 0 var(--accent-color);
       }
     }
 }
