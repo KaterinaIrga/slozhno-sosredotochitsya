@@ -50,26 +50,25 @@
     --background-image: url("../images/cover-image-light.png");
     }
 
+  html:has(.theme_dark)
+  {
+    --background-image: url("../images/cover-image-dark.png");
+  }
 
-  html {
+  .page {
     background-image: var(--background-image);
   }
 
-    .page {
-      background-image: var(--background-image);
+  .header__rec {
+    visibility: hidden ;
+  }
+  
+  @media screen and (width < 1024px) {
+    .header__title {
+      text-shadow: 4px 4px 0 var(--accent-color);
     }
-
-    .header__rec {
-      visibility: hidden ;
+    .footer__title {
+      text-shadow: 2px 2px 0 var(--accent-color);
     }
-
-    @media screen and (width < 1024px) {
-      .header__title {
-        text-shadow: 4px 4px 0 var(--accent-color);
-      }
-
-      .footer__title {
-        text-shadow: 2px 2px 0 var(--accent-color);
-      }
-    }
+  }
 }

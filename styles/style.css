@@ -58,7 +58,7 @@
   margin-block-end: 10px;
   container-type: inline-size;
   /* height: 94.79vh; */
-  height: 97.vh;
+  height: 97.01vh;
 }
 
 
@@ -350,6 +350,7 @@ font-size: var(--common-font-size);
 
 .section__subtitle {
   font-size: var(--common-font-size);
+  color: var(--decoration-color);
   grid-row: 1;
   grid-column: 2 / -1;
   align-self: self-start;
@@ -507,7 +508,7 @@ font-size: var(--common-font-size);
   align-items: center;
   position: relative;
   margin-block-start: 10px;
-  
+
 }
 
 .footer.decorated-zone::before {
