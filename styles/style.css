@@ -1,12 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-* {
-  margin-inline: 0;
-  margin-block: 0;
-  padding-inline: 0;
-  padding-block: 0;
-}
-
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   padding: var(--padding-size);
@@ -33,14 +26,14 @@
 @media screen and (width >= 768px) {
   .page {
     gap: 60px;
-    --title-font-size: 120px;
+    /* --title-font-size: 120px; */
   }
 }
 
 @media screen and (width >= 1024px) {
   .page {
     gap: 60px;
-    --title-font-size: 157px;
+   /*  --title-font-size: 157px; */
   }
 }
 

@@ -4,21 +4,23 @@
 */
 :root {
   --background-image: url("../images/cover-image-dark.png");
-  --paragraph-color: #F1B2CE;
-  --decoration-color: #FF0070;
-  --decoration-color-lite:color-mix(in lch, var(--decoration-color), transparent 40%);
-  --accent-color: #FF0070;
+  --paragraph-color: #f1b2ce;
+  --decoration-color: #ff0070;
+  --decoration-color-lite: color-mix(
+    in lch,
+    var(--decoration-color),
+    transparent 40%
+  );
+  --accent-color: #ff0070;
   --header-color: #000028;
-  --title-color: #DB00FF;
-  --font-family: 'IBM Plex mono';
+  --title-color: #db00ff;
+  --font-family: "IBM Plex mono";
   --padding-size: clamp(10px, 2.545vw + 0.458px, 20px);
-  --title-font-size: 116px;
+  --title-font-size: clamp(116px, 15.6vw, 157px);
   --common-font-size: 18px;
   --title-line-height: 82.5%;
   --common-line-height: 23.4px;
   --font-weight-bold: bold;
   --font-weight-regular: normal;
-  --title-shadow-color: #FF0070;
+  --title-shadow-color: #ff0070;
 }
-
-

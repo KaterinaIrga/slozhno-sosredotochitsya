@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+
+* {
+  margin-inline: 0;
+  margin-block: 0;
+  padding-inline: 0;
+  padding-block: 0;
+}
+
+
 html {
   background: fixed var(--background-image) center / cover;
 }
